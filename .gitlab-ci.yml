@@ -1,0 +1,9 @@
+image: "node:16.13.2"
+
+stages:
+  - build
+Yarn build:
+  stage: build
+  script:
+    - yarn install --network-timeout 100000
+    - yarn build
